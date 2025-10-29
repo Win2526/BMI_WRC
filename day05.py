@@ -12,7 +12,11 @@ st.header('st.write')
 st.write('Hello, *World!* :sunglasses:, ')
 
 # Example 2
-
+{
+"first_key" : "WRC",
+"second_key" : "two",
+"third_key" : "true"
+}
 st.write(1234)
 
 df = pd.DataFrame({
@@ -24,13 +28,7 @@ df = pd.DataFrame({
 add_sidebar = st.sidebar.selectbox('Select a Option !', ('Table1', 'Table2','Table3 Random & Chart','Spare1','BMI','Spare3','Spare4'))
 
 if add_sidebar == 'Table1':
-
-    {
-    "first_key" : "WRC",
-    "second_key" : "two",
-    "third_key" : "true"
-    }
-    
+   
      # Example 3
 
      st.write('Table1 is a Manual DataFrame:',df)
@@ -113,5 +111,6 @@ if add_sidebar == 'BMI':
                     st.error("You are Extremely Overweight")
         except:
             st.error("Please enter valid numeric values.")
+
 
 
