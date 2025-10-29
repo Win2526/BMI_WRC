@@ -3,11 +3,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-{
-    "first_key" : "WRC",
-    "second_key" : "two",
-    "third_key" : "true"
-}
+
 
 st.header('st.write')
 
@@ -26,11 +22,18 @@ df = pd.DataFrame({
 })
 
 add_sidebar = st.sidebar.selectbox('Select a Option !', ('Table1', 'Table2','Table3 Random & Chart','Spare1','BMI','Spare3','Spare4'))
+
 if add_sidebar == 'Table1':
+
+    {
+    "first_key" : "WRC",
+    "second_key" : "two",
+    "third_key" : "true"
+    }
+    
      # Example 3
 
      st.write('Table1 is a Manual DataFrame:',df)
-
 
 # Example 4
 if add_sidebar == 'Table2':
@@ -110,4 +113,5 @@ if add_sidebar == 'BMI':
                     st.error("You are Extremely Overweight")
         except:
             st.error("Please enter valid numeric values.")
+
 
