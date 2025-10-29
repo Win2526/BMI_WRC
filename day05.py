@@ -3,6 +3,12 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+{
+    "first_key" : "WRC",
+    "second_key" : "two",
+    "third_key" : "true"
+}
+
 st.header('st.write')
 
 # Example 1
@@ -104,3 +110,4 @@ if add_sidebar == 'BMI':
                     st.error("You are Extremely Overweight")
         except:
             st.error("Please enter valid numeric values.")
+
